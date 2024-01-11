@@ -5,5 +5,5 @@ add_custom_command(TARGET hello POST_BUILD
 )
 endif()
 if(COMMAND app_post_build_func)
-cmake_language(CALL app_post_build_func hello $<TARGET_FILE:hello> )
+cmake_language(CALL app_post_build_func hello)
 endif()
